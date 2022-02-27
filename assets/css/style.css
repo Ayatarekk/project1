@@ -20,7 +20,6 @@ img{
 h3{
     color: #3e4a59;
     font-weight: 600;
-    margin-top: 50px;
     margin-bottom: 50px;
     padding-right: 10px;
 }
@@ -97,8 +96,19 @@ button.navbar-toggler:focus{
 
 /*start give*/
 .give h3{display: block;}
-.give img{
-    width: 100%;
+.give .card{
+    width: 18rem;
+    border-radius: 20px;
+    border: none;
+    margin-top: 55px;
+}
+.give .owl-carousel .owl-item img {
+    display: block;
+    /* width: 100%; */
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    margin: 24px auto;
 }
 .give .card-title{
     color: #3aade6;
@@ -161,6 +171,7 @@ button.navbar-toggler:focus{
 }
 .works h3{
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 .works .work-header{
     text-align: right;
@@ -201,7 +212,7 @@ button.navbar-toggler:focus{
     margin-bottom: 20px;
     box-shadow: 5px 5px 15px #888888;
     border-radius: 20px;
-    width: 18rem;
+    width: 21rem!important;
     background-color: #fff;
 
 }
@@ -285,6 +296,18 @@ button.navbar-toggler:focus{
 .microsoft .micro-foot{
     margin-bottom: 40px;
 }
+.microsoft .micro-foot .col:last-child{
+    text-align: left;
+    padding-left: 37px;
+    color: #ab9898;
+}
+.microsoft .micro-foot .micro-price{
+    color: #ab9898;
+
+}
+.microsoft .micro-foot i{
+    color:#233142;
+}
 .microsoft .micro-foot-item{
     text-align: center;
     margin-bottom: 20px;
@@ -296,7 +319,9 @@ button.navbar-toggler:focus{
     font-weight: normal;
 }
 /* Start testim */
-
+.testim h3{
+    margin-top: 60px;
+}
 .testim .testim-items{
     background-image: url(../images/our-client-bg.jpg);
     padding: 50px 0;
@@ -333,13 +358,19 @@ footer p{
 footer .icons i{
     margin-right: 10px;
 }
+footer .icons a:hover{
+    color: #fff!important;
+    text-decoration: none;
+}
 footer .svg-inline--fa {
     margin-right: 10px;
 }
 footer .footer-img{
     height: 250px;
 }
-
+footer a{
+    color: #fff;
+}
 
 
 /*========works-page===========*/
@@ -358,9 +389,16 @@ footer .footer-img{
     background-color: #e1e1e1;
     padding-top: 20px;
 }
-.works-page .pagination{
-    justify-content: center;
+
+.pagination{justify-content: center!important;}
+.works-page  .pagination{
+    position: relative;
+    left: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    padding-top: 20px;
 }
+
 .works-page .page-link:hover{
     background-color: #3aade6;
     color: #fff;
@@ -374,6 +412,18 @@ footer .footer-img{
     background-repeat: no-repeat;
     padding-top: 70px;
 }
+.microsoft-page{
+    background-image: url(../images/articles.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px 0;
+
+}
+.microsoft-page .micro-foot{
+    background-color: #fff;
+    margin-top: -15px;
+}
 .microsoft .microsoft-items .micro-foot{
     padding-top: 12px;
     background-color: #fff;
@@ -383,6 +433,10 @@ footer .footer-img{
     margin-top: -15px;
 
 }
+.microsoft .micro-itemmm .micro-foot{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
 
 /*================="tatbe-one==================*/
 .lafaa h3{
@@ -391,6 +445,7 @@ footer .footer-img{
     text-align: right!important;
     padding-right: 20px;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .tat-details p{
@@ -618,12 +673,23 @@ footer .footer-img{
           color:#fff;
         
         }
-        
+        /*override in carousel*/
+        .card-carousel .my-card{
+            background-color: transparent;
+        }
+        .card-carousel .my-card:before{
+            display: none;
+        }
     
 /*================tahdeth===============*/
 .tahdeh{
 background-color: #ececec;
 padding: 20px 0;
+}
+.tahdeh h3{
+    border-right: 2px solid #3aade6;
+    margin-right: 30px;
+    padding-top: 20px;
 }
 .tahdeh img{
     margin: auto;
@@ -634,7 +700,7 @@ padding: 20px 0;
 }
 .tahdeh p{
     line-height: 1.8;
-    color: #7c8187;
+    color: #222;
 
 }
 .tahdeth-item{
